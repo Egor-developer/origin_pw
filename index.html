@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ORIGIN PW</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#" class="logo">
+        <img
+          src="./image/icons/logo.svg"
+          alt="ORIGIN PW логотип"
+          class="logo-image"
+        />
+      </a>
+      <nav class="menu">
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="list__link">Главная</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Форум</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">О сервере</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Начать игру</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Скачать</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-links">
+        <a href="#" class="header-link">Регистация</a>
+        <a href="#" class="header-link">Личный кабинет</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero container">
+            <h1 class="hero-title">ДОБРО ПОЖАЛОВАТЬ 
+              К НАМ НА СЕРВЕР!</h1>
+            <p class="hero-text">
+              где вы сможете вновь ощутить атмосферу постоянного развития игры, 
+как это было на официальном сервере. Мы предлагаем уникальный опыт прохождения всех этапов Идеального Мира — от версии 1.3.6 
+до актуальной версии. 
+            </p>
+            <div class="hero-buttons-inner">
+              <button class="hero-button button">НАЧАТЬ ИГРУ</button>
+              <button class="hero-button button">
+                О СЕРВЕРЕ
+              </button>
+            </div>
+            <div class="timer">
+              <h3 class="timer-title">ДО ОБЪЕДИНЕНИЯ:</h3>
+              <div class="timer-items-inner">
+                <div class="timer-item">
+                  <span class="timer-item__number" id="days">0</span>
+                  <span class="timer-item__time">ДНЕЙ</span>
+                </div>
+                <div class="timer-item">
+                  <span class="timer-item__number" id="hours">0</span>
+                  <span class="timer-item__time">ЧАСОВ</span>
+                </div>
+                <div class="timer-item">
+                  <span class="timer-item__number" id="minutes">0</span>
+                  <span class="timer-item__time">МИНУТ</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image__inner">
+              <img
+            class="hero-image"
+            src="./image/hero-illustration.png"
+            srcset="
+              ./image/hero-illustration.png    1x,
+              ./image/hero-illustration_2x.png 2x
+            "
+            alt="картинка тигра"
+          />
+            </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

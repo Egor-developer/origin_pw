@@ -1,0 +1,138 @@
+.header {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 28px 65px 22px;
+  background: linear-gradient(#161514, #161514) padding-box,
+    linear-gradient(to right, #914a05, #edc170, #914a05) border-box;
+  border: 5px solid transparent;
+  border-radius: 0 0 25px 25px;
+  color: rgba(145, 74, 5, 1);
+}
+
+.header a:hover {
+  color: #fff;
+}
+
+.logo:hover {
+  opacity: 70%;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.list__link {
+  font-size: 24px;
+  line-height: 124%;
+}
+
+.header-links {
+  display: flex;
+  gap: 35px;
+}
+
+.header-link {
+  font-size: 32px;
+  line-height: 124%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  position: relative;
+}
+
+.hero-title {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 97px;
+  line-height: 124%;
+  text-shadow: 3px 2px 6px #914a05;
+  background: linear-gradient(91.91deg, #ffecc0 2.24%, #de7f1d 131.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  max-width: 1000px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  max-width: 910px;
+  font-size: 24px;
+  line-height: 142%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.hero-buttons-inner {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 116px;
+}
+
+.timer {
+  margin: 0 auto;
+  background: linear-gradient(#161514, #161514) padding-box,
+    linear-gradient(to right, #914a05, #edc170, #914a05) border-box;
+  border: 5px solid transparent;
+  padding: 18px 52px 38px;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.timer-title {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 151%;
+  text-transform: uppercase;
+}
+
+.timer-items-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-item__number {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 151%;
+}
+
+.timer-item__time {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 151%;
+}
+
+.hero-image__inner {
+  position: absolute;
+  top: 67px;
+  right: -80px;
+}
+
+.hero-image__inner::before {
+  content: image-set(
+    url("../image/hero-illustration-2.png") 1x,
+    url("../image/hero-illustration-2_2x.png") 2x
+  );
+  position: absolute;
+  bottom: -320px;
+  right: 0;
+  z-index: -1;
+}
