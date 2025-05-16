@@ -6,86 +6,246 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/svg" href="./image/icons/favicon.svg" />
     <title>ORIGIN PW</title>
   </head>
   <body>
-    <header class="header container">
-      <a href="#" class="logo">
-        <img
-          src="./image/icons/logo.svg"
-          alt="ORIGIN PW логотип"
-          class="logo-image"
-        />
-      </a>
-      <nav class="menu">
-        <ul class="list">
-          <li class="list__item">
-            <a href="#" class="list__link">Главная</a>
-          </li>
-          <li class="list__item">
-            <a href="#" class="list__link">Форум</a>
-          </li>
-          <li class="list__item">
-            <a href="#" class="list__link">О сервере</a>
-          </li>
-          <li class="list__item">
-            <a href="#" class="list__link">Начать игру</a>
-          </li>
-          <li class="list__item">
-            <a href="#" class="list__link">Скачать</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-links">
-        <a href="#" class="header-link">Регистация</a>
-        <a href="#" class="header-link">Личный кабинет</a>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="logo">
+          <img
+            src="./image/icons/logo.svg"
+            alt="ORIGIN PW логотип"
+            class="logo-image"
+          />
+        </a>
+        <nav class="menu">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="list__link">Главная</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Форум</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">О сервере</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Начать игру</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">Скачать</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-links">
+          <a href="#" class="header-link">Регистация</a>
+          <a href="#" class="header-link">Личный кабинет</a>
+        </div>
       </div>
     </header>
     <main class="main">
-      <section class="hero container">
-            <h1 class="hero-title">ДОБРО ПОЖАЛОВАТЬ 
-              К НАМ НА СЕРВЕР!</h1>
-            <p class="hero-text">
-              где вы сможете вновь ощутить атмосферу постоянного развития игры, 
-как это было на официальном сервере. Мы предлагаем уникальный опыт прохождения всех этапов Идеального Мира — от версии 1.3.6 
-до актуальной версии. 
-            </p>
-            <div class="hero-buttons-inner">
-              <button class="hero-button button">НАЧАТЬ ИГРУ</button>
-              <button class="hero-button button">
-                О СЕРВЕРЕ
-              </button>
-            </div>
-            <div class="timer">
-              <h3 class="timer-title">ДО ОБЪЕДИНЕНИЯ:</h3>
-              <div class="timer-items-inner">
-                <div class="timer-item">
-                  <span class="timer-item__number" id="days">0</span>
-                  <span class="timer-item__time">ДНЕЙ</span>
-                </div>
-                <div class="timer-item">
-                  <span class="timer-item__number" id="hours">0</span>
-                  <span class="timer-item__time">ЧАСОВ</span>
-                </div>
-                <div class="timer-item">
-                  <span class="timer-item__number" id="minutes">0</span>
-                  <span class="timer-item__time">МИНУТ</span>
-                </div>
+      <section class="hero">
+        <div class="hero__inner container">
+          <h1 class="hero-title">ДОБРО ПОЖАЛОВАТЬ К НАМ НА СЕРВЕР!</h1>
+          <p class="hero-text">
+            где вы сможете вновь ощутить атмосферу постоянного развития игры,
+            как это было на официальном сервере. Мы предлагаем уникальный опыт
+            прохождения всех этапов Идеального Мира — от версии 1.3.6 до
+            актуальной версии.
+          </p>
+          <div class="hero-buttons-inner">
+            <button class="hero-button button">НАЧАТЬ ИГРУ</button>
+            <button class="hero-button button">О СЕРВЕРЕ</button>
+          </div>
+          <div class="timer">
+            <h3 class="timer-title">ДО ОБЪЕДИНЕНИЯ:</h3>
+            <div class="timer-items-inner">
+              <div class="timer-item">
+                <span class="timer-item__number" id="days">0</span>
+                <span class="timer-item__time">ДНЕЙ</span>
+              </div>
+              <div class="timer-item">
+                <span class="timer-item__number" id="hours">0</span>
+                <span class="timer-item__time">ЧАСОВ</span>
+              </div>
+              <div class="timer-item">
+                <span class="timer-item__number" id="minutes">0</span>
+                <span class="timer-item__time">МИНУТ</span>
               </div>
             </div>
-            <div class="hero-image__inner">
-              <img
-            class="hero-image"
-            src="./image/hero-illustration.png"
-            srcset="
-              ./image/hero-illustration.png    1x,
-              ./image/hero-illustration_2x.png 2x
-            "
-            alt="картинка тигра"
-          />
+          </div>
+          <div class="hero-image__inner">
+            <img
+              class="timeline-item-image"
+              src="./image/hero-illustration.png"
+              srcset="
+                ./image/hero-illustration.png    1x,
+                ./image/hero-illustration_2x.png 2x
+              "
+              alt="тигр"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="road-map container">
+        <div class="timeline">
+          <div class="timeline__inner">
+            <div class="timeline-item">
+              <div class="timeline-item-image__inner">
+                <h3 class="timeline-item__title">MAIN</h3>
+              </div>
+              <div class="timeline-card">
+                <p class="timeline-card__text">
+                  Добро пожаловать на Origin Main, основную версию нашего
+                  проекта! Учавствуйте в эпических битвах и найдите себе друзей
+                  именно здесь. Именно с Origin Main происходят слияния наших
+                  сезонных серверов, так что ваш прогресс в игре никогда не
+                  будет утерян. Время приключений настало!
+                </p>
+              </div>
             </div>
+            <div class="timeline-item">
+              <div class="timeline-item-image__inner">
+                <h3 class="timeline-item__title">LITE</h3>
+              </div>
+              <div class="timeline-card">
+                <p class="timeline-card__text">
+                  Присоединяйтесь к Origin Lite - вашему идеальному варианту без
+                  нудной прокачки с максимум активности! Наша отточенная PVP
+                  концепция подходит для тех, кто хочет максимум фана с минимум
+                  временных затрат. Откройте для себя мир приключений без лишних
+                  забот!
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-image__inner">
+                <h3 class="timeline-item__title">SEASON</h3>
+              </div>
+              <div class="timeline-card">
+                <p class="timeline-card__text">
+                  Погрузитесь в мир Origin Season, где каждый открывает новые
+                  горизонты! Учавствуйте в ограниченных по времени сезонах,
+                  получайте уникальные серверные награды и развивайте своего
+                  персонажа! Присоединяйтесь к нашему активному сообществу и не
+                  пропустите увлекательные события!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards container">
+        <div class="card card_main">
+          <div class="card__info">
+            <img
+              src="./image/icons/logo.svg"
+              alt="ORIGIN PW логотип"
+              class="logo-image"
+            />
+            <h4 class="card__title">MAIN</h4>
+            <p class="card__text">
+              Стабильный сервер для настоящих искателей приключений.
+              Присоединяйся к нам!
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__button button">СКАЧАТЬ</button>
+            <button class="card__button button">ОПИСАНИЕ</button>
+            <button class="card__button button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </div>
+        </div>
+        <div class="card card_lite">
+          <div class="card__info">
+            <img
+              src="./image/icons/logo.svg"
+              alt="ORIGIN PW логотип"
+              class="logo-image"
+            />
+            <h4 class="card__title">LITE</h4>
+            <p class="card__text">
+              PVP без лишних сложностей и прокачки. Вступай в битву прямо
+              сейчас!
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__button button">СКАЧАТЬ</button>
+            <button class="card__button button">ОПИСАНИЕ</button>
+            <button class="card__button button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </div>
+        </div>
+        <div class="card card_season">
+          <div class="card__info">
+            <img
+              src="./image/icons/logo.svg"
+              alt="ORIGIN PW логотип"
+              class="logo-image"
+            />
+            <h4 class="card__title card__title_main">SEASON</h4>
+            <p class="card__text">
+              Каждый сезон - это новая глава ваших приключений! Присоединяйтесь
+              и пишите свою историю!
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__button button">СКАЧАТЬ</button>
+            <button class="card__button button">ОПИСАНИЕ</button>
+            <button class="card__button button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer container">
+      <img
+        src="./image/icons/logo-grey.svg"
+        alt="ORIGIN PW логотип"
+        class="logo-image"
+      />
+      <p class="footer__text">ВСЕ ПРАВА ПРИНАДЛЕЖАТ ПРАВООБЛАДАТЕЛЯМ</p>
+      <nav class="footer-menu">
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link"
+              >Пользовательское соглашение</a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link"
+              >Политика конфинденциальности</a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">Служба поддержки</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">Голосование Main</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">Голосование Lite</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">Голосование Season</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-social-media__inner">
+        <a href="#" class="footer-social-media__link">
+          <img
+            src="./image/icons/telegram.svg"
+            alt="телеграм"
+            class="footer-social-media"
+          />
+        </a>
+        <a href="#" class="footer-social-media__link">
+          <img
+            src="./image/icons/wk.svg"
+            alt="вк"
+            class="footer-social-media"
+          />
+        </a>
+      </div>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>
