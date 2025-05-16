@@ -29,10 +29,11 @@ const countDate = () => {
     document.getElementById("days").innerHTML = "0";
     document.getElementById("hours").innerHTML = "0";
     document.getElementById("minutes").innerHTML = "0";
-    // localStorage.removeItem("countdownEndDate");
   }
 };
 
 countDate();
 
 const x = setInterval(countDate, 1000);
+
+localStorage.removeItem("countdownEndDate");
