@@ -1,27 +1,4 @@
-// const menuToggle = document.querySelector(".menu-toggle");
-// const menu = document.querySelector(".menu");
-// const overlay = document.querySelector(".overlay");
-
-// menuToggle.addEventListener("click", function () {
-//   this.classList.toggle("active");
-//   menu.classList.toggle("active");
-//   overlay.classList.toggle("active");
-// });
-
-// overlay.addEventListener("click", function () {
-//   this.classList.remove("active");
-//   menuToggle.classList.remove("active");
-//   menu.classList.remove("active");
-// });
-
-// const menuLinks = document.querySelectorAll(".list__link");
-// menuLinks.forEach((link) => {
-//   link.addEventListener("click", function () {
-//     overlay.classList.remove("active");
-//     menuToggle.classList.remove("active");
-//     menu.classList.remove("active");
-//   });
-// });
+const endDate = "2025-05-24T23:59:59";
 
 let countDownDate;
 const savedDate = localStorage.getItem("countdownEndDate");
@@ -29,18 +6,12 @@ const savedDate = localStorage.getItem("countdownEndDate");
 if (savedDate) {
   countDownDate = new Date(savedDate);
 } else {
-  countDownDate = new Date();
-  countDownDate.setDate(countDownDate.getDate() + 5);
-  countDownDate.setHours(countDownDate.getHours() + 16);
-  countDownDate.setMinutes(countDownDate.getMinutes() + 7);
-  countDownDate.setSeconds(countDownDate.getSeconds() + 0);
-
+  countDownDate = new Date(endDate);
   localStorage.setItem("countdownEndDate", countDownDate);
 }
 
 const countDate = () => {
   const now = new Date().getTime();
-
   const distance = countDownDate - now;
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -58,16 +29,10 @@ const countDate = () => {
     document.getElementById("days").innerHTML = "0";
     document.getElementById("hours").innerHTML = "0";
     document.getElementById("minutes").innerHTML = "0";
-    localStorage.removeItem("countdownEndDate");
+    // localStorage.removeItem("countdownEndDate");
   }
 };
 
 countDate();
 
 const x = setInterval(countDate, 1000);
-
-// window.addEventListener("load", () => {
-//   setTimeout(() => {
-//     document.querySelector(".preloader").classList.add("hide");
-//   }, 2700);
-// });
