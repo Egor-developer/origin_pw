@@ -526,6 +526,10 @@
   opacity: 70%;
 }
 
+.footer-game-desin {
+  margin-left: 60px;
+}
+
 @media (max-width: 1500px) {
   .header__inner {
     padding: 20px 50px;
